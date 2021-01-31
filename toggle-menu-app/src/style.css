@@ -5,58 +5,25 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#toggleMenu {
-    color: #41729F;
-    display: flex;
-    flex-direction: column;
-    width: 300px; 
-}
-
 #toggleMenuBtn {
-    width: 100%;
+    width: 300px;
     background-color: #E9E9F5;
     color: black;
     display: flex;
     place-items: center;
     place-content: center;
-    border-radius: 10px;
     cursor: pointer;
 }
 
-/*.openButton {
+.roundedButton {
     border-radius: 10px;
 }
 
-.closedButton {
-    border-radius: 10px 10px 0 0;
-}*/
+.pointedButton {
+    border-radius: 0px;
+}
 
-#burger {
+#btnText {
     margin: 10px;
 }
 
-#toggleNavList {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0 0 10px 10px;
-}
-
-.navLink {
-    cursor: pointer;
-    padding: 10px 10px;
-    width: 25%;
-    text-align: center;
-}
-
-.navLink:first-child, .navLink {
-    border-top: 1px solid black;
-    padding: 15px 0;
-    width: 100%;
-}
-
-#toggleNavList {
-    background-color: #E9E9F5;
-    list-style: none;
-}

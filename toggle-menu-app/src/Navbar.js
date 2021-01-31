@@ -4,48 +4,31 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props) 
         this.state = {
-            isMenuOpen: false,
-            squareCorners: true
+            pointedCorners: true
         }
+
         this.handleClick = this.handleClick.bind(this)
     }
 
     handleClick = () => {
         this.setState(state => ({
-            isMenuOpen: !state.isMenuOpen,
-            squareCorners: !state.squareCorners            
+            pointedCorners: !state.pointedCorners            
         }))
     }
 
     render() {
-        let toggleBtnClass = this.state.squareCorners ? "openButton" : "closedButton"
+        let toggleBtnClass = this.state.pointedCorners ? "roundedButton" : "pointedButton"
 
 
         return(
             <div>
-                <div id="toggleMenu">
                 
-                    <div id="toggleMenuBtn" className={toggleBtnClass} onClick={this.handleClick}>
+                <div id="toggleMenuBtn" className={toggleBtnClass} onClick={this.handleClick}>
 
-                        <img id="burger" src={process.env.PUBLIC_URL + "./navbar/burger.png"} alt="open menu"/>
+                    <div id="btnText">Click Me!</div>
 
-                    </div>
-                    {this.state.isMenuOpen ? 
-                        <ul id="toggleNavList">
-                            <a to="/whatson" className="navLink">
-                                <li className="navListItem">What's On</li>
-                            </a>
-                            <a to="/book" className="navLink">
-                                <li className="navListItem">Book Tickets</li>
-                            </a>
-                            <a to="/comingsoon" className="navLink">
-                                <li className="navListItem">Coming Soon</li>
-                            </a>
-                            <a to="/contact" className="navLink">
-                                <li className="navListItem">Contact</li>
-                            </a>
-                        </ul> : ""}
                 </div>
+
             </div>
         )
     }
