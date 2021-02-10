@@ -12,11 +12,12 @@ class Navbar extends React.Component {
 
     handleClick = () => {
         this.setState(state => ({
-            pointedCorners: !state.pointedCorners;            
+            pointedCorners: !state.pointedCorners           
         }))
     }
 
     render() {
+
         let toggleBtnClass = this.state.pointedCorners ? "roundedButton" : "pointedButton";
 
 
