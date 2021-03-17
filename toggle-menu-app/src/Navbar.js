@@ -17,9 +17,7 @@ class Navbar extends React.Component {
     }
 
     render() {
-
         let toggleBtnClass = this.state.pointedCorners ? "roundedButton" : "pointedButton";
-
 
         return(
             <div>
