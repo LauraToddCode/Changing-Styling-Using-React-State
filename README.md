@@ -3,7 +3,7 @@
 
  A repo for a blog post explaining how to change CSS styling using React State.
 
- It's simple app of a single button, which when clicked, switches back and forth from having pointed to rounded corners.
+ It's a simple app of a single button, which when clicked, switches back and forth from having pointed to rounded corners.
 
  The 'pointedCorners' state is created with a boolean value. When the button is clicked, the state changes to the opposite boolean value.
 
